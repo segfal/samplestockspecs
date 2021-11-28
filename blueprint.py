@@ -67,8 +67,14 @@ def show_plot():
     #fig.show() ## for plotting
     fig = go.Figure(data=[go.Scatter(x=dates, y=Close, mode='lines')]) ## for plotting
     fig.show() ## for plotting
-    
+
     return None
 
+
+def show_plotmatplotlib():
+    plt.plot(dates, Close, 'r', label='Close')
+    plt.show()
+
+    return None
 
 
